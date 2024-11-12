@@ -11,8 +11,8 @@ import com.scaler.lld.scaler.User;
  */
 public class App {
     public static void main(String[] args) {
-        User student = new Student("student", "student@scaler.in", "batch", 100);
-        student.printInfo(); // inheritance
+        Student student = new Student("student", "student@scaler.in", "batch", 100);
+        student.printInfoSpecific(); // inheritance
     }
 
     public static void resetEmail(List<User> users) {

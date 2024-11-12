@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Student extends User {
+public class Student extends User implements Communicate {
 
     private String batchName;
     private Integer psp;
@@ -35,4 +35,17 @@ public class Student extends User {
         System.out.println("\nStudent: " + getName() + " " + getBatchName());
     }
 
+    public void printInfoSpecific(){
+        System.out.println("\n "+getName()+" ("+getEmail()+") - "+getBatchName());
+    }
+
+    @Override
+    public void sendSms() {
+        System.out.println("Sending SMS to Students");
+    }
+
+    @Override
+    public void sendEmail() {
+        System.out.println("Sending Email to Students");
+    }
 }
