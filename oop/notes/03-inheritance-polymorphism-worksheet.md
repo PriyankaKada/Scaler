@@ -19,7 +19,7 @@ important entity: the student. Some requirements:
 6. Replace the status string with an enum.
 7. We want to generate a student's roll number. First, add an integer field ID to the student.~~
 8. Then add a method to generate the roll number by combining a prefix, batch name and ID. The prefix for all students
-   is "S".~~
+   is "S".
    S-Scaler-1
 
 ```
